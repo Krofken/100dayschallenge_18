@@ -25,6 +25,7 @@ for shape in range (3,11):
         rafi.rt(360/shape)
 
 
+
 for _ in range(1000):
     rafi.forward(30)
     m_angle = int(random.choice(angle))
