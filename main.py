@@ -15,9 +15,16 @@ def random_color():
     return the_tuple
 
 
+rafi.speed(0)
+
+for _ in range(120):
+    rafi.circle(100)
+    rafi.lt(_*2)
+    rafi.color(random_color())
+
 angle = ["0", "90", "180", "270"]
 rafi.width(15)
-rafi.speed(0)
+
 for shape in range (3,11):
     rafi.color(random_color())
     for side in range(shape):
@@ -25,12 +32,13 @@ for shape in range (3,11):
         rafi.rt(360/shape)
 
 
-
 for _ in range(1000):
     rafi.forward(30)
     m_angle = int(random.choice(angle))
     rafi.setheading(m_angle)
     rafi.color(random_color())
+
+
 
 
 screen = Screen()
