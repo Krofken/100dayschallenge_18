@@ -17,9 +17,9 @@ def random_color():
 
 rafi.speed(0)
 
-for _ in range(120):
+for _ in range(121):
     rafi.circle(100)
-    rafi.lt(_*2)
+    rafi.setheading(_*3)
     rafi.color(random_color())
 
 angle = ["0", "90", "180", "270"]
